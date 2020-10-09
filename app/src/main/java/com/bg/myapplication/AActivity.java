@@ -8,11 +8,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-public class AActivity extends Activity {
+import com.bg.myapplication.base.BaseAct;
+
+public class AActivity extends BaseAct {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.e("OneActivity", "onCreate");
+    }
+
+    public void say(){
+        toast("say");
     }
 }
