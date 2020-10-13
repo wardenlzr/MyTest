@@ -7,10 +7,11 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.bg.myapplication.MainActivity;
+import com.socks.library.KLog;
 
 public class BaseAct extends Activity {
 
-    private Activity activity;
+    protected Activity activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class BaseAct extends Activity {
     }
 
     public void loge(String s) {
-        Log.e("Warden", "log() called with: s = [" + s + "]");
+        KLog.a(s);
     }
 
     public void toast(String s) {

@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 
+import com.bg.myapplication.act.AAct;
 import com.bg.myapplication.base.BaseAct;
 
 public class MainActivity extends BaseAct {
@@ -13,7 +14,7 @@ public class MainActivity extends BaseAct {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        loge("MainActivity.onCreate");
     }
 
     public void showDialog(View view) {
@@ -32,5 +33,9 @@ public class MainActivity extends BaseAct {
                 dialog.dismiss();
             }
         });
+    }
+
+    public void jump(View view) {
+        AAct.start(activity);
     }
 }
