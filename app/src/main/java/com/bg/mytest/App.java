@@ -1,4 +1,4 @@
-package com.bg.myapplication;
+package com.bg.mytest;
 
 import android.app.Application;
 import android.os.Process;

@@ -1,11 +1,11 @@
-package com.bg.myapplication;
+package com.bg.mytest;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 
-import com.bg.myapplication.act.AAct;
-import com.bg.myapplication.base.BaseAct;
+import com.bg.mytest.act.AAct;
+import com.bg.mytest.base.BaseAct;
 
 public class MainActivity extends BaseAct {
 
