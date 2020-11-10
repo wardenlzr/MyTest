@@ -8,8 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-
-public class MainAct extends Activity {
+public class LockAct extends Activity {
 
     private DevicePolicyManager policyManager;
     private ComponentName componentName;
@@ -26,12 +25,11 @@ public class MainAct extends Activity {
         componentName = new ComponentName(this, LockReceiver.class);
         if (policyManager.isAdminActive(componentName)) {//判断是否有权限(激活了设备管理器)
             policyManager.lockNow();// 直接锁屏
-            finish();
             // android.os.Process.killProcess(android.os.Process.myPid());
         } else {
             activeManager();//激活设备管理器获取权限
-            this.finish();
         }
+        finish();
     }
 
     // 解除绑定
