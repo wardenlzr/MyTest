@@ -1,1 +1,2 @@
+include ':lockscreen'
 include ':app'
